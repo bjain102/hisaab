@@ -1,6 +1,7 @@
 from flask import Flask, abort, request, jsonify, send_from_directory
 import sqlite3
 import os
+import sys
 from datetime import datetime
 import traceback
 import pdfplumber
@@ -1668,6 +1669,20 @@ def get_rates_summary():
     return jsonify(out)
 
 if __name__ == '__main__':
+    # `--demo` runs against a throwaway database of fabricated transactions
+    # (scripts/seed_demo.py), seeding it on first use. It points DB_PATH at a
+    # SEPARATE file and never touches data/fintrack.db — running the demo must
+    # not be able to disturb real data, so the two never share a path.
+    if '--demo' in sys.argv:
+        from scripts.seed_demo import DEFAULT_DB, seed
+        DB_PATH = DEFAULT_DB
+        if not os.path.exists(DB_PATH):
+            seed(DB_PATH)
+        print("")
+        print(f"DEMO MODE - serving fabricated data from {DB_PATH}.")
+        print("   Every transaction in it is invented. Your real database is untouched.")
+        print("   Delete that file to regenerate it.")
+
     init_db()
     try:
         applied = migrate(DB_PATH)

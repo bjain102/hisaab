@@ -39,15 +39,33 @@ Flask + SQLite backend, React + TypeScript + Tailwind frontend. Single user, run
   order can't regress a balance) and windowed spend milestones whose progress is a live
   query, not a stored counter.
 
-## Running it
+## Try it in 30 seconds
 
-Windows-oriented (the helper scripts are PowerShell), but nothing in the app is
-Windows-specific. Requires Python 3.11+ and Node 20+.
+The app ships with no data, so there is a demo mode that invents some:
 
 ```bash
 pip install -r requirements.txt
 npm install --prefix frontend
+./build.ps1
+python app.py --demo
 ```
+
+That generates ~660 fabricated transactions across four invented cards
+(`scripts/seed_demo.py`) into a **separate** `data/fintrack-demo.db` and serves them
+at http://127.0.0.1:5000. Every rupee of it is made up. Your real database, if you
+have one, is never opened.
+
+The demo is shaped to show the parts worth looking at rather than just to fill
+tables: one merchant appears under four different rail disguises (`UPI-SWIGGY
+BANGALORE`, `SWIGGYBANGALORE`, `RAZ*SWIGGY`, `PTM*SWIGGY LIMITED MUMBAI`) so you can
+watch the normaliser collapse them into a single canonical row of 101 transactions;
+about a sixth of spend is left unconfirmed, so the review queue has six real groups
+in it and the trust meter reads 92.5% rather than a meaningless 100%.
+
+## Running it for real
+
+Windows-oriented (the helper scripts are PowerShell), but nothing in the app is
+Windows-specific. Requires Python 3.11+ and Node 20+.
 
 ```bash
 ./build.ps1     # build the React app into frontend/dist
@@ -104,3 +122,7 @@ record, a phased backlog and a decision log. The four that shape the code most:
 A working personal tool, actively developed, not a product. There is no multi-user
 story, no hosted version, and no intention of either. If you are here for the parsers
 or the categorisation pipeline, those are the parts most likely to be useful to you.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
