@@ -1,0 +1,290 @@
+/*
+ * FinTrack design tokens — modern dark-fintech palette (Claude Design
+ * handoff, 2026-07-29). Replaces the earlier "Red Bull Racing livery"
+ * language. The ONLY file allowed to contain raw color values (grep-enforced).
+ *
+ * Semantics (read this before touching a value):
+ *  - carbon-*   : near-black grounds, warm-shifted (app → surface → raised).
+ *  - brand-*    : DEPRECATED as a distinct chrome color — this design has no
+ *                 separate "chrome vs status" split; green is the one
+ *                 interactive accent (nav, buttons, links, focus rings), so
+ *                 brand-* now just points at the same green as sector-green.
+ *                 Kept defined (not deleted) because many existing className
+ *                 strings still reference `border-brand-bright` etc — do not
+ *                 add NEW usages of brand-*, reach for sector-green instead.
+ *  - sector-*   : status semantics. green = gain / right card / interactive
+ *                 accent, yellow = caution / suboptimal / reward accent.
+ *  - alert      : reserved, scarce red. Losses and alerts ONLY — never brand
+ *                 decoration. This is the one rule that must never be broken:
+ *                 a red number in a gap/loss report must always mean "you
+ *                 lost money" and nothing else.
+ *  - series-*   : chart composition palette. Deliberately excludes alert red
+ *                 so status color always means status. Re-tuned as a set for
+ *                 this palette (2026-07-29) — do not change one value without
+ *                 re-checking contrast/separation against the others.
+ */
+
+@theme {
+  /* ── Grounds — warm, not neutral gray ── */
+  --color-carbon-0: oklch(0.175 0.014 55);
+  --color-carbon-1: oklch(0.21 0.015 55);
+  --color-carbon-2: oklch(0.255 0.017 55);
+  --color-carbon-3: oklch(0.3 0.02 55);
+
+  /* ── Lines — one base hue at three alphas ── */
+  --color-line-soft: oklch(0.36 0.02 55 / 0.28);
+  --color-line: oklch(0.36 0.02 55 / 0.55);
+  --color-line-strong: oklch(0.36 0.02 55 / 0.78);
+
+  /* ── Text ── */
+  --color-ink: oklch(0.96 0.006 90);
+  --color-ink-mute: oklch(0.74 0.014 80);
+  --color-ink-faint: oklch(0.53 0.014 80);
+
+  /* ── Brand: deprecated alias, see semantics note above ── */
+  --color-brand: oklch(0.76 0.18 152);
+  --color-brand-bright: oklch(0.76 0.18 152);
+  --color-brand-glow: oklch(0.76 0.18 152 / 0.35);
+
+  /* ── Sector semantics (status + the one interactive accent) ── */
+  --color-sector-purple: oklch(0.7 0.16 300);
+  --color-sector-green: oklch(0.76 0.18 152);
+  --color-sector-green-dim: oklch(0.76 0.18 152 / 0.15);
+  --color-sector-yellow: oklch(0.81 0.13 85);
+  --color-sector-yellow-dim: oklch(0.81 0.13 85 / 0.15);
+  --color-alert: oklch(0.64 0.21 25); /* reserved: losses/alerts only, see semantics note above */
+  --color-alert-dim: oklch(0.64 0.21 25 / 0.14);
+
+  /* ── UI accents that happen to be chart-adjacent ──
+   * NOT a chart palette: amber is the reward/caution accent (badges, progress
+   * bars, rate figures — 14 call sites) and sky is one stop of the behaviour
+   * bar's gradient. They are tuned for TEXT legibility, so they deliberately
+   * sit brighter than the chart band below. Don't fold them back in. */
+  --color-series-amber: oklch(0.72 0.15 85);
+  --color-series-sky: oklch(0.7 0.13 200);
+
+  /* ── Chart composition palette (categorical) ──
+   * Validated 2026-07-29 with the dataviz validator, --mode dark against the
+   * carbon-1 panel surface (#1e1712), --pairs all — ALL CHECKS PASS, worst
+   * all-pairs CVD ΔE 12.9 (deutan), normal-vision 15.5.
+   *
+   * Three constraints produced these exact values; changing one alone breaks
+   * the set, so re-run the validator on the WHOLE palette after any edit:
+   *   1. Dark mode's lightness band is L 0.48–0.67. The previous palette sat
+   *      at L 0.70–0.72 — outside it, which is why the bars read as glowing
+   *      ON the page rather than sitting IN it. That was the real complaint.
+   *   2. --pairs all, not adjacent: in a STACKED bar any two segments can end
+   *      up touching when a category is absent for a month, so every pair
+   *      must separate, not just neighbours in the assignment order.
+   *   3. Separation under CVD lives on the blue↔yellow axis (red↔green
+   *      collapses for deuteranopes), hence the Okabe-Ito-derived hues and
+   *      the deliberate lightness split — 4 is dark so it never collides with
+   *      3 under deutan. FOUR hues is the ceiling that clears the ΔE ≥ 8
+   *      target here; five only ever reached 6.1 (see MonthlyComposition).
+   * The reserved alert-red arc (~10–40°) is avoided so red keeps meaning loss. */
+  --color-chart-1: oklch(0.65 0.15 65); /* warm amber-orange */
+  --color-chart-2: oklch(0.65 0.15 175); /* teal-green */
+  --color-chart-3: oklch(0.65 0.15 245); /* blue */
+  --color-chart-4: oklch(0.5 0.15 325); /* purple, deliberately darker */
+  /* "Other" recedes by being DARK (nearer the ground) — on a dark surface that
+     is what recession means. Chroma stays just above the 0.10 floor: pure gray
+     fails the validator's chroma check outright. */
+  --color-chart-other: oklch(0.5 0.105 60);
+
+  /* ── Type ── */
+  --font-display: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --font-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --text-2xs: 0.6875rem; /* 11 — chip labels */
+  --text-xs: 0.75rem; /* 12 — captions, eyebrows */
+  --text-sm: 0.875rem; /* 14 — body/table default, panel titles */
+  --text-base: 1rem; /* 16 */
+  --text-lg: 1.25rem; /* 20 — panel titles */
+  --text-xl: 1.75rem; /* 28 — hero figures */
+  --text-2xl: 2.5rem; /* 40 — the headline figure */
+
+  /* ── Shape: soft, rounded — the opposite of the old broadcast-angular set ── */
+  --radius-chip: 0.625rem; /* 10 — rank/delta chips, table rows */
+  --radius-panel: 1.125rem; /* 18 — panels, cards, modal, inputs */
+
+  /* ── Motion ── */
+  --duration-fast: 150ms;
+  --duration-base: 220ms;
+  --ease-out-hard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-carbon-0);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+
+  /* Faint fixed dot grid — the one static ambient layer. The two animated
+     gradient orbs live in shell/AmbientOrbs.tsx as real elements (not
+     ::before/::after — two independently-timed shapes need two elements,
+     and this pseudo-element pair is spoken for by this grid alone now). */
+  html::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(var(--color-line) 1px, transparent 0);
+    background-size: 22px 22px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+  }
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    50% {
+      transform: scale(1.12);
+      opacity: 0.8;
+    }
+  }
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-14px, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  /* Popover entrance (Select, DateRangePicker). Deliberately mount/unmount
+     instantly rather than run an exit animation — a JS-driven exit that
+     never resolves leaves an invisible, still-interactive element covering
+     the page, which is worse than no animation at all.
+
+     Transform-only, no opacity: an animation that stalls at its `from`
+     frame (backgrounded/throttled tab, a browser that never fires the
+     completion) must degrade to "no scale-in effect", never to "invisible
+     but still clickable". An opacity-based entrance was tried first and
+     got stuck exactly this way in testing — the popover was there,
+     interactive, and permanently unrenderable. Visibility must never
+     depend on an animation reaching its end state. */
+  @keyframes popIn {
+    from {
+      transform: scale(0.98) translateY(-4px);
+    }
+    to {
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  /* Every figure in the app is timing-screen mono with lined-up digits. */
+  .figure {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+
+  /* Display face: headlines and panel titles. Bold, NOT italic/uppercase —
+     that forced-caps treatment was the old livery's signature; this palette
+     reads as sentence-case bold instead. */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  /* Small tracked-uppercase label ("Overview", "Cards"). Body font, not
+     display — matches the source design, which never puts its display face
+     on text this small. */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: var(--text-2xs);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--color-ink-mute);
+  }
+
+  /* Primary CTA: green→gold gradient pill. No skew — that was the old
+     livery's "rare chrome accent"; this palette has no skewed elements. */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    color: var(--color-carbon-0);
+    background: linear-gradient(90deg, var(--color-sector-green), var(--color-sector-yellow));
+    border: none;
+    border-radius: 9999px;
+    padding: 0.6rem 1.25rem;
+    cursor: pointer;
+    transition:
+      filter var(--duration-fast) ease,
+      transform var(--duration-fast) ease;
+  }
+  .btn-primary:hover {
+    filter: brightness(1.1);
+  }
+  .btn-primary:active {
+    transform: scale(0.96);
+  }
+
+  /* Secondary CTA: same pill geometry, outlined instead of filled, so a
+     Cancel/Confirm pair reads as one family without competing for attention. */
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    color: var(--color-ink-mute);
+    background: var(--color-carbon-1);
+    border: 1px solid var(--color-line);
+    border-radius: 9999px;
+    padding: 0.6rem 1.25rem;
+    cursor: pointer;
+    transition:
+      color var(--duration-fast) ease,
+      border-color var(--duration-fast) ease;
+  }
+  .btn-secondary:hover {
+    color: var(--color-ink);
+    border-color: var(--color-line-strong);
+  }
+
+  ::selection {
+    background: var(--color-sector-green);
+    color: var(--color-carbon-0);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sector-green);
+    outline-offset: 2px;
+  }
+
+  /* Hairline scrollbars that belong to the carbon world. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

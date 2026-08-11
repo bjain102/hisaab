@@ -1,0 +1,29 @@
+*.pdf
+*.db
+*.sqlite
+*.sqlite3
+.env
+__pycache__/
+venv/
+.venv/
+statements/
+Data/
+data/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Parser corpus (ADR-006). NOTHING in the corpus is published: statements are real
+# financial documents. The suite skips gracefully when they're absent — see
+# tests/corpus/tier1/README.md.
+tests/corpus/tier1/*
+!tests/corpus/tier1/README.md
+tests/corpus/tier2/
+tests/corpus/passwords.local.json
+
+# Card rules research — each file names the specific cards its author holds
+ccyamls/
+
+# Local config (Kite API keys etc.)
+config.local.json
