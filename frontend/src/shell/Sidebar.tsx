@@ -34,7 +34,15 @@ function BrandMark() {
       aria-label="Hisaab"
     >
       <defs>
-        <linearGradient id="hisaab-mark-gradient" x1="0" y1="0" x2="1" y2="1">
+        {/* userSpaceOnUse is REQUIRED here, not a preference. The default,
+            objectBoundingBox, resolves gradient coordinates against each
+            painted element's own bounding box — and a vertical line's bbox is
+            zero-WIDE, which makes the gradient degenerate and paints nothing
+            at all. The three tally strokes silently vanished, leaving only
+            the flat-coloured diagonal, and it took a screenshot to catch:
+            the stops resolve correctly to their tokens either way, so
+            inspecting computed styles says everything is fine. */}
+        <linearGradient id="hisaab-mark-gradient" gradientUnits="userSpaceOnUse" x1="5" y1="25" x2="26" y2="6">
           <stop offset="0" stopColor="var(--color-sector-green)" />
           <stop offset="1" stopColor="var(--color-sector-yellow)" />
         </linearGradient>

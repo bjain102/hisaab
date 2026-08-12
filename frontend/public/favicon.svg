@@ -12,7 +12,11 @@
   -->
   <rect width="32" height="32" rx="7" fill="#150f0b"/>
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <!-- gradientUnits="userSpaceOnUse" is load-bearing: the default resolves
+         against each element's own bounding box, and a vertical line's bbox
+         has zero width, so the gradient degenerates and the tally strokes
+         paint as nothing at all. -->
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="6.5" y1="23" x2="25" y2="9">
       <stop offset="0" stop-color="#39d075"/>
       <stop offset="1" stop-color="#e7ba54"/>
     </linearGradient>
