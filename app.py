@@ -1676,8 +1676,25 @@ if __name__ == '__main__':
     if '--demo' in sys.argv:
         from scripts.seed_demo import DEFAULT_DB, seed
         DB_PATH = DEFAULT_DB
-        if not os.path.exists(DB_PATH):
-            seed(DB_PATH)
+        # Not just "does the file exist" — a demo db that exists but has no
+        # accounts is a real failure mode (seed_demo.py's own build() writes
+        # rows only after the file is already created and migrated, so an
+        # interrupted first run leaves exactly this: a migrated, empty file
+        # that looks seeded). seed_demo.py now cleans up after itself on
+        # failure, but this check is what makes an OLD broken file left over
+        # from before that fix self-heal instead of silently serving zeros
+        # forever.
+        needs_seed = not os.path.exists(DB_PATH)
+        if not needs_seed:
+            probe = sqlite3.connect(DB_PATH)
+            try:
+                needs_seed = probe.execute(
+                    "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='accounts'"
+                ).fetchone()[0] == 0 or probe.execute('SELECT COUNT(*) FROM accounts').fetchone()[0] == 0
+            finally:
+                probe.close()
+        if needs_seed:
+            seed(DB_PATH, force=True)
         print("")
         print(f"DEMO MODE - serving fabricated data from {DB_PATH}.")
         print("   Every transaction in it is invented. Your real database is untouched.")

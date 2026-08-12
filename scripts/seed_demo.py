@@ -263,20 +263,37 @@ def seed(db_path=DEFAULT_DB, force=False, quiet=False):
         os.remove(db_path)
     os.makedirs(os.path.dirname(os.path.abspath(db_path)), exist_ok=True)
 
-    original = app_module.DB_PATH
-    app_module.DB_PATH = db_path
+    # init_db()/migrate() create the file and stamp a full schema onto it
+    # BEFORE build() writes a single row. If anything interrupts the process
+    # in between — Ctrl+C, a closed terminal, a crash — the file left behind
+    # exists and looks fully migrated, but is empty. That is a worse failure
+    # than "no file at all": the caller here (seed(), and app.py's `--demo`
+    # gate below) both treat "file exists" as "already seeded" and never
+    # look inside it, so a half-built file silently serves as an empty demo
+    # forever instead of failing loudly or self-healing. Wrapping the whole
+    # build in a try/except that deletes the file on any failure — including
+    # KeyboardInterrupt — means an interrupted run leaves NO file, which the
+    # existence check already knows how to recover from correctly.
     try:
-        app_module.init_db()
-        migrate(db_path)
-    finally:
-        app_module.DB_PATH = original
+        original = app_module.DB_PATH
+        app_module.DB_PATH = db_path
+        try:
+            app_module.init_db()
+            migrate(db_path)
+        finally:
+            app_module.DB_PATH = original
 
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    try:
-        rows = build(conn)
-    finally:
-        conn.close()
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        try:
+            rows = build(conn)
+        finally:
+            conn.close()
+    except BaseException:
+        if os.path.exists(db_path):
+            os.remove(db_path)
+        raise
+
     if not quiet:
         print(f'Demo database written to {db_path}: {rows} fabricated transactions '
               f'across {len(CARDS)} invented cards.')
