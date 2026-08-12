@@ -1,6 +1,6 @@
 # Hisaab
 
-*हिसाब — the account, the reckoning. As in "hisaab do": account for it.*
+*हिसाब - the account, the reckoning. As in "hisaab do": account for it.*
 
 A local-only personal finance app for Indian credit cards. It parses bank statement
 PDFs and CSVs, categorises transactions at the merchant level with an explicit
@@ -10,37 +10,37 @@ the money actually go, across every card, over any period.**
 Flask + SQLite backend, React + TypeScript + Tailwind frontend. Single user, runs on
 `localhost`, no auth, no cloud, no telemetry. The database is one file on disk.
 
-> **Scope of this repository.** This is the card module — import, categorisation,
+> **Scope of this repository.** This is the card module - import, categorisation,
 > dashboard, rewards.
-> No statements, no database, and no personal financial data are included — see
+> No statements, no database, and no personal financial data are included - see
 > [Bring your own data](#bring-your-own-data).
 
-![Dashboard — net spend, month-on-month movers, category trust, and the UPI-vs-card behaviour split](docs/screenshots/dashboard.png)
+![Dashboard - net spend, month-on-month movers, category trust, and the UPI-vs-card behaviour split](docs/screenshots/dashboard.png)
 
-*Every screenshot on this page is the demo dataset — `python app.py --demo` — not
+*Every screenshot on this page is the demo dataset - `python app.py --demo` - not
 anyone's real spending.*
 
 ## What it does
 
-- **Statement import** — six PDF parsers (HDFC, ICICI, Axis, Kotak, IDFC First, Amex)
+- **Statement import** - six PDF parsers (HDFC, ICICI, Axis, Kotak, IDFC First, Amex)
   plus CSV, including password-protected PDFs. Passwords are used in memory to unlock
   a file and never stored. Duplicate protection is two-layered: a SHA-256 hash rejects
   byte-identical re-uploads outright, and an overlapping-period check refuses a
   statement that covers dates already imported for that card unless you force it.
-- **Merchant-level categorisation** — descriptions are normalised (payment-gateway
+- **Merchant-level categorisation** - descriptions are normalised (payment-gateway
   prefixes, trailing city names and reference blocks peeled off), then matched against
   a merchant/alias table by longest substring. Every transaction records *where* its
   category came from: a confirmed merchant rule, a suggestion, the issuer's own
   category, a keyword fallback, or an explicit manual pin.
-- **A review queue with a trust meter** — uncategorised spend is grouped by normalised
+- **A review queue with a trust meter** - uncategorised spend is grouped by normalised
   merchant, biggest first. Confirming one group restamps every matching transaction in
   a single round trip, and the dashboard reports the paise-weighted share of spend you
   have actually vouched for. Fix a merchant once, it stays fixed.
-- **Dashboard** — spend by category and card, monthly composition, top merchants
+- **Dashboard** - spend by category and card, monthly composition, top merchants
   (canonicalised, not gateway duplicates), month-on-month movers, and a UPI-vs-card
   behaviour lens: on real data, UPI-on-credit-card was 52% of *transactions* but only
   11% of the *rupees*, which ranking by rupees alone completely hides.
-- **Rewards** — dated reward-balance history per card (so importing statements out of
+- **Rewards** - dated reward-balance history per card (so importing statements out of
   order can't regress a balance) and windowed spend milestones whose progress is a live
   query, not a stored counter.
 
@@ -51,7 +51,7 @@ under each: the raw description the bank actually sent (`EASEBUZZ*APARTMENT DUES
 `RSP*THE FILTER COFFEE CO`) against the merchant it normalises to. One click confirms
 the whole group and every future transaction that matches it.
 
-![Review queue — unconfirmed spend grouped by merchant, with the raw bank description under each](docs/screenshots/review-queue.png)
+![Review queue - unconfirmed spend grouped by merchant, with the raw bank description under each](docs/screenshots/review-queue.png)
 
 ### Import
 
@@ -59,14 +59,14 @@ Card registry, drag-and-drop statement import, and the history of what has alrea
 ingested. A statement whose period overlaps one you've already imported is refused
 rather than silently double-counted.
 
-![Import — saved cards, statement drop zone, and import history](docs/screenshots/import.png)
+![Import - saved cards, statement drop zone, and import history](docs/screenshots/import.png)
 
 ### Rewards
 
 Dated balance history per card, so an out-of-order import corrects a balance instead of
 regressing it, with spend-target milestones underneath.
 
-![Rewards — per-card balances with sparklines and spend milestones](docs/screenshots/rewards.png)
+![Rewards - per-card balances with sparklines and spend milestones](docs/screenshots/rewards.png)
 
 ## Try it in 30 seconds
 
@@ -104,7 +104,7 @@ python app.py   # serve the API + built SPA at http://127.0.0.1:5000
 ```
 
 For frontend work, `./dev.ps1` runs Flask alongside Vite with HMR on `:5173`. Note
-that `python app.py` serves the *built* bundle — after a frontend change you need
+that `python app.py` serves the *built* bundle - after a frontend change you need
 `./build.ps1` before `:5000` shows it.
 
 ```bash
@@ -119,7 +119,7 @@ This repository ships **no statements and no database.** Bank statements are rea
 financial documents, so the test corpus is deliberately empty and the whole
 golden-file suite skips on a fresh clone (it reports as skipped, not failed). Add your
 own statements to `tests/corpus/tier1/` and run `scripts/gen_expectations.py` to turn
-it on — see [tests/corpus/tier1/README.md](tests/corpus/tier1/README.md).
+it on - see [tests/corpus/tier1/README.md](tests/corpus/tier1/README.md).
 
 The rewards rules engine reads per-card YAML files from a `ccyamls/` directory that is
 likewise not published, since a card-rules file names the specific cards its author
@@ -127,7 +127,7 @@ holds. Without it the engine simply has no rules to seed; everything else runs.
 
 ## Design decisions worth knowing
 
-The reasoning lives in [docs/](docs/) — a product spec, an architecture decision
+The reasoning lives in [docs/](docs/) - a product spec, an architecture decision
 record, a phased backlog and a decision log. The four that shape the code most:
 
 - **Money is integer paise, everywhere** (ADR-005). Floats drift under aggregation and
@@ -145,7 +145,7 @@ record, a phased backlog and a decision log. The four that shape the code most:
 - **Categorisation states its confidence** (ADR-009). The earlier keyword-substring
   approach with an order-dependent override table produced categories nobody could
   audit. Now every transaction says where its category came from, and a migration that
-  reclassified anything would have been a bug — the one that introduced this model
+  reclassified anything would have been a bug - the one that introduced this model
   asserts it changed zero stored categories.
 
 ## Status
@@ -156,4 +156,4 @@ or the categorisation pipeline, those are the parts most likely to be useful to 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
