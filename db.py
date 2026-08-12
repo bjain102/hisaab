@@ -9,7 +9,7 @@ Mechanics:
     migration: a failed verify rolls the whole migration back (user_version
     included — it's stored in the DB header and is transactional).
   - Before each migration the DB file is snapshot-copied to
-    data/backups/fintrack-<stamp>-pre-v<N>.db. Newest 20 backups are kept.
+    data/backups/hisaab-<stamp>-pre-v<N>.db. Newest 20 backups are kept.
   - The runner is invoked on app start (app.py __main__) and by migrate.ps1;
     a failed migration means the app REFUSES TO START with a clear message —
     never runs against a half-migrated DB.
@@ -35,7 +35,7 @@ class MigrationError(RuntimeError):
 
 
 def backup_db(db_path, reason):
-    """Snapshot-copy the DB to <db_dir>/backups/fintrack-<stamp>-<reason>.db.
+    """Snapshot-copy the DB to <db_dir>/backups/hisaab-<stamp>-<reason>.db.
     Returns the backup path, or None when the DB file doesn't exist yet
     (fresh install — nothing to protect). Prunes to the newest BACKUPS_KEEP."""
     if not os.path.exists(db_path):
@@ -43,7 +43,7 @@ def backup_db(db_path, reason):
     backups_dir = os.path.join(os.path.dirname(os.path.abspath(db_path)), 'backups')
     os.makedirs(backups_dir, exist_ok=True)
     stamp = datetime.now().strftime('%Y%m%d-%H%M%S-%f')
-    dest = os.path.join(backups_dir, f'fintrack-{stamp}-{reason}.db')
+    dest = os.path.join(backups_dir, f'hisaab-{stamp}-{reason}.db')
     shutil.copy2(db_path, dest)
     _prune_backups(backups_dir)
     return dest

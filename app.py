@@ -22,7 +22,7 @@ import re
 app = Flask(__name__, static_folder=None)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
-DB_PATH = 'data/fintrack.db'
+DB_PATH = 'data/hisaab.db'
 FRONTEND_DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'frontend', 'dist')
 # Module-level like DB_PATH so tests can monkeypatch it to a tmp dir — the
 # hardcoded-path version of this (relative to app.py's own location) silently
@@ -485,7 +485,7 @@ def spa(spa_path=''):
     if os.path.isfile(os.path.join(FRONTEND_DIST, 'index.html')):
         return send_from_directory(FRONTEND_DIST, 'index.html')
     return (
-        '<h1>FinTrack</h1><p>Frontend build not found. Run <code>./build.ps1</code>, then reload.</p>',
+        '<h1>Hisaab</h1><p>Frontend build not found. Run <code>./build.ps1</code>, then reload.</p>',
         503,
     )
 
@@ -1671,7 +1671,7 @@ def get_rates_summary():
 if __name__ == '__main__':
     # `--demo` runs against a throwaway database of fabricated transactions
     # (scripts/seed_demo.py), seeding it on first use. It points DB_PATH at a
-    # SEPARATE file and never touches data/fintrack.db — running the demo must
+    # SEPARATE file and never touches data/hisaab.db — running the demo must
     # not be able to disturb real data, so the two never share a path.
     if '--demo' in sys.argv:
         from scripts.seed_demo import DEFAULT_DB, seed
@@ -1696,6 +1696,6 @@ if __name__ == '__main__':
         raise SystemExit(1)
     # Plain ASCII: emoji here crashes on Windows when stdout is cp1252
     # (e.g. captured/piped output), killing the server at startup.
-    print("\nFinTrack is running!")
+    print("\nHisaab is running!")
     print("   Open http://localhost:5000 in your browser\n")
     app.run(debug=False, port=5000)

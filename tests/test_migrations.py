@@ -141,13 +141,13 @@ def test_backup_prune_keeps_newest_20(tmp_path):
     backups = tmp_path / 'backups'
     backups.mkdir()
     for i in range(25):
-        p = backups / f'fintrack-{i:03d}-x.db'
+        p = backups / f'hisaab-{i:03d}-x.db'
         p.write_bytes(b'x')
         os.utime(p, (1000 + i, 1000 + i))               # deterministic mtime order
     _prune_backups(str(backups))
     remaining = sorted(os.listdir(backups))
     assert len(remaining) == 20
-    assert remaining[0] == 'fintrack-005-x.db'           # 5 oldest pruned
+    assert remaining[0] == 'hisaab-005-x.db'           # 5 oldest pruned
 
 
 def test_backup_db_returns_none_for_missing_file(tmp_path):

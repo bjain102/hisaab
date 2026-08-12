@@ -1,4 +1,6 @@
-# FinTrack
+# Hisaab
+
+*हिसाब — the account, the reckoning. As in "hisaab do": account for it.*
 
 A local-only personal finance app for Indian credit cards. It parses bank statement
 PDFs and CSVs, categorises transactions at the merchant level with an explicit
@@ -9,11 +11,14 @@ Flask + SQLite backend, React + TypeScript + Tailwind frontend. Single user, run
 `localhost`, no auth, no cloud, no telemetry. The database is one file on disk.
 
 > **Scope of this repository.** This is the card module — import, categorisation,
-> dashboard, rewards. The net-worth side of the app (asset registry, dated valuations,
-> loan amortization, the net-worth dashboard) is developed privately and is not
-> published here; docs referring to it as roadmap have been trimmed accordingly.
+> dashboard, rewards.
 > No statements, no database, and no personal financial data are included — see
 > [Bring your own data](#bring-your-own-data).
+
+![Dashboard — net spend, month-on-month movers, category trust, and the UPI-vs-card behaviour split](docs/screenshots/dashboard.png)
+
+*Every screenshot on this page is the demo dataset — `python app.py --demo` — not
+anyone's real spending.*
 
 ## What it does
 
@@ -39,6 +44,30 @@ Flask + SQLite backend, React + TypeScript + Tailwind frontend. Single user, run
   order can't regress a balance) and windowed spend milestones whose progress is a live
   query, not a stored counter.
 
+### The review queue
+
+Unconfirmed spend, grouped by normalised merchant, biggest first. Note the `e.g.` line
+under each: the raw description the bank actually sent (`EASEBUZZ*APARTMENT DUES`,
+`RSP*THE FILTER COFFEE CO`) against the merchant it normalises to. One click confirms
+the whole group and every future transaction that matches it.
+
+![Review queue — unconfirmed spend grouped by merchant, with the raw bank description under each](docs/screenshots/review-queue.png)
+
+### Import
+
+Card registry, drag-and-drop statement import, and the history of what has already been
+ingested. A statement whose period overlaps one you've already imported is refused
+rather than silently double-counted.
+
+![Import — saved cards, statement drop zone, and import history](docs/screenshots/import.png)
+
+### Rewards
+
+Dated balance history per card, so an out-of-order import corrects a balance instead of
+regressing it, with spend-target milestones underneath.
+
+![Rewards — per-card balances with sparklines and spend milestones](docs/screenshots/rewards.png)
+
 ## Try it in 30 seconds
 
 The app ships with no data, so there is a demo mode that invents some:
@@ -50,17 +79,19 @@ npm install --prefix frontend
 python app.py --demo
 ```
 
-That generates ~660 fabricated transactions across four invented cards
-(`scripts/seed_demo.py`) into a **separate** `data/fintrack-demo.db` and serves them
+That generates around 600 fabricated transactions across four invented cards
+(`scripts/seed_demo.py`) into a **separate** `data/hisaab-demo.db` and serves them
 at http://127.0.0.1:5000. Every rupee of it is made up. Your real database, if you
-have one, is never opened.
+have one, is never opened. The generator is seeded, so a given day reproduces
+exactly; it spans the last nine months, so the running total grows as the current
+month fills in.
 
 The demo is shaped to show the parts worth looking at rather than just to fill
 tables: one merchant appears under four different rail disguises (`UPI-SWIGGY
 BANGALORE`, `SWIGGYBANGALORE`, `RAZ*SWIGGY`, `PTM*SWIGGY LIMITED MUMBAI`) so you can
-watch the normaliser collapse them into a single canonical row of 101 transactions;
+watch the normaliser collapse them into a single canonical row of ~100 transactions;
 about a sixth of spend is left unconfirmed, so the review queue has six real groups
-in it and the trust meter reads 92.5% rather than a meaningless 100%.
+in it and the trust meter reads ~92% rather than a meaningless 100%.
 
 ## Running it for real
 

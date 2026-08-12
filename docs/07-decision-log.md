@@ -1,4 +1,4 @@
-# 07 — Decision Log: how FinTrack got here, and why
+# 07 — Decision Log: how Hisaab got here, and why
 
 This is not a technical handoff (see [06-phase-2-handoff.md](06-phase-2-handoff.md)
 for that — it's written for the next engineer or AI session to continue the code).
@@ -10,7 +10,7 @@ like a pile of choices and starts looking like a sequence of reasoned trade-offs
 
 ---
 
-## What FinTrack was
+## What Hisaab was
 
 A single Windows user's personal side project: three Python files (`app.py`,
 `pdf_parsers.py`, a scratch debug script), a Jinja+vanilla-JS frontend, and a SQLite
@@ -22,7 +22,7 @@ Money was stored as SQLite `REAL` (floating point). It worked, for one person, o
 machine, and had quietly accumulated the kind of technical debt that never bites you
 until the day it does.
 
-## What FinTrack is now
+## What Hisaab is now
 
 A personal finance OS in active construction: the same card-tracking core, being
 rebuilt on a proper foundation (real tests, a golden-file parser corpus, schema
@@ -90,8 +90,8 @@ taken," not silently avoided.
 ### 4. The purpose correction — the biggest pivot in the project
 
 **What happened:** partway through discovery, the owner stopped and corrected the
-entire premise. The original brief described *what* FinTrack does (tracks cards,
-shows spend) but never said *why it exists*. The real answer, once stated: FinTrack
+entire premise. The original brief described *what* Hisaab does (tracks cards,
+shows spend) but never said *why it exists*. The real answer, once stated: Hisaab
 exists for **credit-card rewards optimization**. Three jobs, in order of value —
 understand expenses, understand what you actually earn per rupee (net of caps and
 exclusions, not the advertised rate), and — the one that matters most — **identify
@@ -161,7 +161,7 @@ repeated data rows. The first mockup had put skew and glow on every rank chip in
 dense list, and that's very likely what read as "gaudy."
 
 **One more fork inside this decision:** the reference used red as its *ambient*
-brand color. FinTrack had already reserved red exclusively for losses and alerts —
+brand color. Hisaab had already reserved red exclusively for losses and alerts —
 specifically so a red number in the future gap report means "you lost money" and
 nothing else. Adopting the reference literally would have destroyed that signal. The
 owner — a Red Bull Racing fan — resolved it by picking Red Bull's navy as the brand
@@ -204,7 +204,7 @@ tempted to skip building the fixture for "just a small parser tweak."
 
 ### 9. Two similar things that are deliberately not the same thing
 
-**The question:** does FinTrack handle a recurring monthly reward bonus (e.g. "make
+**The question:** does Hisaab handle a recurring monthly reward bonus (e.g. "make
 4 payments over ₹1,500 in a calendar month" on one particular card) as a "milestone"?
 
 **What we found on checking, rather than assuming:** yes — but as a different
@@ -223,7 +223,7 @@ solve a problem the existing design already solves elsewhere.
 ### 10. A conflict found mid-migration, resolved before it shipped
 
 **The situation, current as of this writing:** while building the schema migration
-that will let FinTrack safely reject a duplicate statement import, the original
+that will let Hisaab safely reject a duplicate statement import, the original
 architecture decision's design was found to contain a real bug: a database constraint
 that would make an explicitly-approved feature (force-importing a statement even when
 its dates overlap an existing one) *impossible* to actually use, in the one case where

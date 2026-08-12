@@ -1,7 +1,7 @@
 # 01 — Code Audit
 
 **Date:** 2026-07-12
-**Scope:** Full read of `app.py`, `pdf_parsers.py`, `debug_rewards.py`, templates/static, the live SQLite DB (`data/fintrack.db`, a few hundred transactions, Jan–Jul 2026), and the `statements/` folder (35 files). Parsers were executed against the redacted statement files. No application code was modified.
+**Scope:** Full read of `app.py`, `pdf_parsers.py`, `debug_rewards.py`, templates/static, the live SQLite DB (`data/hisaab.db`, a few hundred transactions, Jan–Jul 2026), and the `statements/` folder (35 files). Parsers were executed against the redacted statement files. No application code was modified.
 
 All amounts in this document are synthetic. No card numbers, real amounts, or statement contents appear here.
 

@@ -1,4 +1,4 @@
-# 02 — Product Spec: FinTrack → Personal Finance OS
+# 02 — Product Spec: Hisaab → Personal Finance OS
 
 **Date:** 2026-07-12 (rev. 2 same day — purpose corrected by owner: rewards optimisation is the core, not a side feature)
 **Status:** Agreed with owner (interviews 2026-07-12). This is the spec that was never written; a stranger should be able to build from it.
@@ -151,7 +151,7 @@ The card-rules engine and the reports built on it. Schema and computation semant
 
 - **Money:** integer paise end-to-end (ADR-005). UI formats Indian-style (₹1,23,456.78).
 - **Dates:** ISO `YYYY-MM-DD` in storage and API, always.
-- **Backups:** the app makes a dated copy of the DB file before any migration and before any destructive bulk operation (`data/backups/fintrack-<date>-<reason>.db`, last 20 kept). `/api/clear` is removed entirely.
+- **Backups:** the app makes a dated copy of the DB file before any migration and before any destructive bulk operation (`data/backups/hisaab-<date>-<reason>.db`, last 20 kept). `/api/clear` is removed entirely.
 - **Privacy in artifacts:** no full card numbers anywhere (last4 only); statement files live under gitignored `statements/`; passwords never persisted.
 - **Testing:** parser golden corpus is a permanent institution (ADR-006); every new parser or parser fix lands with corpus coverage.
 

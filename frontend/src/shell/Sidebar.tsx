@@ -22,7 +22,7 @@ export default function Sidebar() {
           >
             <span className="h-3 w-3 rounded-[3px] bg-carbon-0" />
           </span>
-          <span className="display text-lg text-ink">Fintrack</span>
+          <span className="display text-lg text-ink">Hisaab</span>
         </div>
       </div>
 

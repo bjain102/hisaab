@@ -1,6 +1,6 @@
 """Build a demo database of entirely fabricated transactions.
 
-Why this exists: FinTrack ships with no data — statements are real financial
+Why this exists: Hisaab ships with no data — statements are real financial
 documents, so none are published (see tests/corpus/tier1/README.md). That
 leaves anyone who clones this repo looking at empty screens. This script
 produces a self-contained database with invented cards, invented statements
@@ -27,7 +27,7 @@ tables:
 Deterministic: same seed, same database, so screenshots and any future
 fixture use stay reproducible.
 
-    python scripts/seed_demo.py                    # -> data/fintrack-demo.db
+    python scripts/seed_demo.py                    # -> data/hisaab-demo.db
     python scripts/seed_demo.py --db path/to.db --force
     python app.py --demo                           # seed if needed, then serve
 """
@@ -44,7 +44,7 @@ import app as app_module  # noqa: E402
 from db import migrate  # noqa: E402
 
 SEED = 20260101
-DEFAULT_DB = os.path.join('data', 'fintrack-demo.db')
+DEFAULT_DB = os.path.join('data', 'hisaab-demo.db')
 
 # (institution, variant, last4) — last4s are conventional test values so no
 # reader mistakes these for anyone's real cards.
@@ -284,7 +284,7 @@ def seed(db_path=DEFAULT_DB, force=False, quiet=False):
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(description='Generate a demo FinTrack database (all data fabricated).')
+    ap = argparse.ArgumentParser(description='Generate a demo Hisaab database (all data fabricated).')
     ap.add_argument('--db', default=DEFAULT_DB, help=f'output path (default: {DEFAULT_DB})')
     ap.add_argument('--force', action='store_true', help='overwrite the file if it already exists')
     args = ap.parse_args()
