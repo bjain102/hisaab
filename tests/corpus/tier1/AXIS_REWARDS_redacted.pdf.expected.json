@@ -1,0 +1,32 @@
+{
+  "period": {
+    "end": "2026-04-01",
+    "start": "2026-03-03"
+  },
+  "rewards": {
+    "label": "EDGE Points",
+    "value": 7628,
+    "value_type": "points"
+  },
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 447.0,
+      "bank_category": "RESTAURANTS",
+      "date": "2026-03-05",
+      "description": "PYU*SWIGGY FOOD,BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 68421.0,
+      "date": "2026-03-15",
+      "description": "BBPS PAYMENT RECEIVED - DP016074121030K6J3B3",
+      "type": "credit"
+    }
+  ]
+}

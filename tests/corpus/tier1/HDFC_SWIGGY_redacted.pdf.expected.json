@@ -1,0 +1,211 @@
+{
+  "period": {
+    "end": "2026-06-01",
+    "start": "2026-05-02"
+  },
+  "rewards": {
+    "label": "Cashback",
+    "value": 379.66,
+    "value_type": "cashback_inr"
+  },
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 105.0,
+      "date": "2026-05-03",
+      "description": "PTM*FLIPKART MBanglore",
+      "type": "debit"
+    },
+    {
+      "amount": 115.61,
+      "date": "2026-05-03",
+      "description": "RELIANCE RETAIL LIMITENAVI MUMBAI",
+      "type": "debit"
+    },
+    {
+      "amount": 5.5,
+      "date": "2026-05-03",
+      "description": "RELIANCE RETAIL LIMITENAVI MUMBAI",
+      "type": "credit"
+    },
+    {
+      "amount": 3312.0,
+      "date": "2026-05-04",
+      "description": "BPPY CC PAYMENT DP016124172327GWWQR (Ref# ST261250083000010125876)",
+      "type": "credit"
+    },
+    {
+      "amount": 1.16,
+      "date": "2026-05-05",
+      "description": "1% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 5.25,
+      "date": "2026-05-05",
+      "description": "5% Swiggy Cashback",
+      "type": "credit"
+    },
+    {
+      "amount": 5.89,
+      "date": "2026-05-07",
+      "description": "Reinstating_Diff_1%_Swiggy_Cbk_Rev",
+      "type": "debit"
+    },
+    {
+      "amount": 1.35,
+      "date": "2026-05-07",
+      "description": "Reinstating_Diff_1%_Swiggy_Cashback",
+      "type": "credit"
+    },
+    {
+      "amount": 296.0,
+      "date": "2026-05-07",
+      "description": "PYU*Swiggy FoodBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 29.6,
+      "date": "2026-05-09",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 504.0,
+      "date": "2026-05-10",
+      "description": "RAZ*SWIGGYBengaluru",
+      "type": "debit"
+    },
+    {
+      "amount": 50.4,
+      "date": "2026-05-12",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 298.0,
+      "date": "2026-05-12",
+      "description": "PYU*Swiggy FoodBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 29.8,
+      "date": "2026-05-14",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 296.0,
+      "date": "2026-05-14",
+      "description": "RAZ*SwiggyBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 29.6,
+      "date": "2026-05-16",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 1617.0,
+      "date": "2026-05-16",
+      "description": "PYU*Nykaa Fashion PrivMumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 80.85,
+      "date": "2026-05-18",
+      "description": "5% Swiggy Cashback",
+      "type": "credit"
+    },
+    {
+      "amount": 265.0,
+      "date": "2026-05-18",
+      "description": "PYU*Swiggy FoodBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 264.0,
+      "date": "2026-05-18",
+      "description": "PYU*Swiggy FoodBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 52.9,
+      "date": "2026-05-20",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 296.0,
+      "date": "2026-05-22",
+      "description": "RAZ*SwiggyBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 301.0,
+      "date": "2026-05-23",
+      "description": "RSP*INSTAMARTBANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 59.7,
+      "date": "2026-05-25",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 2400.0,
+      "date": "2026-05-25",
+      "description": "FLIPKART INTERNET PVBENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 478.0,
+      "date": "2026-05-26",
+      "description": "PTM*FLIPKART INTERNETNOIDA",
+      "type": "debit"
+    },
+    {
+      "amount": 23.9,
+      "date": "2026-05-28",
+      "description": "5% Swiggy Cashback",
+      "type": "credit"
+    },
+    {
+      "amount": 113.0,
+      "date": "2026-05-29",
+      "description": "Amazon Seller ServicesBANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 190.0,
+      "date": "2026-05-29",
+      "description": "Amazon Seller ServicesBANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 416.0,
+      "date": "2026-05-30",
+      "description": "RAZ*SwiggyBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 15.15,
+      "date": "2026-05-31",
+      "description": "5% Swiggy Cashback",
+      "type": "credit"
+    },
+    {
+      "amount": 413.0,
+      "date": "2026-05-31",
+      "description": "RAZ*SwiggyBangalore",
+      "type": "debit"
+    }
+  ]
+}

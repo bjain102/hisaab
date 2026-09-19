@@ -1,0 +1,42 @@
+{
+  "period": null,
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 879.9,
+      "date": "2025-01-20",
+      "description": "10% Swiggy Cashback (Ref# ST250210084000010950183)",
+      "type": "credit"
+    },
+    {
+      "amount": 164.0,
+      "date": "2025-01-28",
+      "description": "RSP*SWIGGY FOOD BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 8849.0,
+      "date": "2025-01-29",
+      "description": "TELE TRANSFER CREDIT (Ref# ST250300083000010151846)",
+      "type": "credit"
+    },
+    {
+      "amount": 539.0,
+      "date": "2025-02-01",
+      "description": "WWW SWIGGY COM GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 268.0,
+      "date": "2025-02-09",
+      "description": "Razorpay*Swiggy Limite Bengaluru",
+      "type": "debit"
+    }
+  ]
+}

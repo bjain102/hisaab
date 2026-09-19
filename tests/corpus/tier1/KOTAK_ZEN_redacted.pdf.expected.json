@@ -1,0 +1,22 @@
+{
+  "period": {
+    "end": "2026-04-15",
+    "start": "2026-03-16"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": 0.0,
+    "debits": 1125.0,
+    "tad": 1125.0
+  },
+  "transactions": [
+    {
+      "amount": 1125.0,
+      "bank_category": "Grocery",
+      "date": "2026-03-17",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    }
+  ]
+}

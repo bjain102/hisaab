@@ -1,0 +1,23 @@
+﻿*.pdf
+*.db
+*.sqlite
+*.sqlite3
+.env
+__pycache__/
+venv/
+.venv/
+statements/
+Data/
+data/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Parser corpus (ADR-006): tier1 is sanitized and committable; tier2 is real, local-only
+!tests/corpus/tier1/*.pdf
+!tests/corpus/tier1/*.csv
+tests/corpus/tier2/
+tests/corpus/passwords.local.json
+ccyamls/
+config.local.json

@@ -1,0 +1,144 @@
+{
+  "period": null,
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 10.0,
+      "date": "2025-01-02",
+      "description": "UPI-Jai Hanuman Stationery",
+      "type": "debit"
+    },
+    {
+      "amount": 15.0,
+      "date": "2025-01-02",
+      "description": "UPI-KALARAM",
+      "type": "debit"
+    },
+    {
+      "amount": 25.0,
+      "date": "2025-01-03",
+      "description": "UPI-Jai Hanuman Stationery",
+      "type": "debit"
+    },
+    {
+      "amount": 629.0,
+      "date": "2025-01-04",
+      "description": "UPI-RELIANCE RETAIL LIMITED",
+      "type": "debit"
+    },
+    {
+      "amount": 15.66,
+      "date": "2025-01-04",
+      "description": "UPI CC-04-01-2025-500476327499 (Ref# ST250080084000010533270)",
+      "type": "credit"
+    },
+    {
+      "amount": 70.0,
+      "date": "2025-01-05",
+      "description": "UPI-Mr Rajulal Gurjar",
+      "type": "debit"
+    },
+    {
+      "amount": 6096.0,
+      "date": "2025-01-06",
+      "description": "TELE TRANSFER CREDIT (Ref# ST250070083000010201265)",
+      "type": "credit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2025-01-09",
+      "description": "UPI-BMTC BUS KA57F6177",
+      "type": "debit"
+    },
+    {
+      "amount": 180.0,
+      "date": "2025-01-09",
+      "description": "UPI-Ashoka",
+      "type": "debit"
+    },
+    {
+      "amount": 749.0,
+      "date": "2025-01-10",
+      "description": "UPI-CREDPAYTIMESPRIME",
+      "type": "debit"
+    },
+    {
+      "amount": 80.0,
+      "date": "2025-01-11",
+      "description": "UPI-HEMANTH KUMAR C",
+      "type": "debit"
+    },
+    {
+      "amount": 826.0,
+      "date": "2025-01-13",
+      "description": "UPI-CORNER HOUSE ICE CREAMS",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2025-01-13",
+      "description": "UPI-BMTC BUS KA57F1389",
+      "type": "debit"
+    },
+    {
+      "amount": 937.0,
+      "date": "2025-01-14",
+      "description": "UPI-Swiggy Diners",
+      "type": "debit"
+    },
+    {
+      "amount": 141.45,
+      "date": "2025-01-17",
+      "description": "UPI-OLA STORES TECHNOLOGIES P",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2025-01-18",
+      "description": "UPI-Mr Rajulal Gurjar",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2025-01-18",
+      "description": "UPI-Rapido",
+      "type": "debit"
+    },
+    {
+      "amount": 520.0,
+      "date": "2025-01-19",
+      "description": "UPI-ALPHA IMPEX",
+      "type": "debit"
+    },
+    {
+      "amount": 1182.53,
+      "date": "2025-01-21",
+      "description": "InnovativeRetailConceptBangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 30.0,
+      "date": "2025-01-23",
+      "description": "UPI-SRI KRISHNA GANGOTHR",
+      "type": "debit"
+    },
+    {
+      "amount": 120.0,
+      "date": "2025-01-30",
+      "description": "UPI-Ashoka",
+      "type": "debit"
+    },
+    {
+      "amount": 200.0,
+      "date": "2025-02-01",
+      "description": "UPI-Indian Oil Petrol Pump S",
+      "type": "debit"
+    }
+  ]
+}

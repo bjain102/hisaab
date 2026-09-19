@@ -1,0 +1,42 @@
+{
+  "period": null,
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 291.0,
+      "date": "2025-01-10",
+      "description": "RSP*INSTAMART BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 50.0,
+      "date": "2025-01-12",
+      "description": "RSP*SWIGGY DINEOUT BENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 899.0,
+      "date": "2025-01-17",
+      "description": "Swiggy BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 150.0,
+      "date": "2025-01-18",
+      "description": "RSP*SWIGGY DINEOUT BENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 7459.0,
+      "date": "2025-01-18",
+      "description": "RSP*SWIGGY DINEOUT BENGALURU",
+      "type": "debit"
+    }
+  ]
+}

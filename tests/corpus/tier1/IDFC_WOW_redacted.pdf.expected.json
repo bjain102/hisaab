@@ -1,0 +1,61 @@
+{
+  "period": {
+    "end": "2026-06-01",
+    "start": "2026-05-02"
+  },
+  "rewards": {
+    "label": "Reward Points",
+    "value": 448,
+    "value_type": "points"
+  },
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": 20061.24
+  },
+  "transactions": [
+    {
+      "amount": 2847.97,
+      "date": "2026-05-05",
+      "description": "PT FINNET INDONESIA, Jakarta",
+      "type": "debit"
+    },
+    {
+      "amount": 2847.97,
+      "date": "2026-05-05",
+      "description": "PT FINNET INDONESIA, Jakarta",
+      "type": "debit"
+    },
+    {
+      "amount": 2369.0,
+      "date": "2026-05-22",
+      "description": "ZEPTONOW, NAGPUR",
+      "type": "debit"
+    },
+    {
+      "amount": 1298.7,
+      "date": "2026-05-28",
+      "description": "Klook Travel Tech Ltd, Hong Kong",
+      "type": "debit"
+    },
+    {
+      "amount": 4292.67,
+      "date": "2026-05-29",
+      "description": "AGODA.COM, Berlin",
+      "type": "debit"
+    },
+    {
+      "amount": 6404.93,
+      "date": "2026-05-30",
+      "description": "SURFSHARK* SURFSHARK., SURFSHARK.COM",
+      "type": "debit"
+    },
+    {
+      "amount": 2274.66,
+      "date": "2026-05-04",
+      "description": "BillDesk BBPS CC Payment/DP116124172327DDisid",
+      "type": "credit"
+    }
+  ]
+}

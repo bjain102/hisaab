@@ -1,0 +1,33 @@
+{
+  "period": {
+    "end": "2026-03-02",
+    "start": "2026-02-03"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 6738.0,
+      "date": "2026-02-13",
+      "description": "ZOMATO GURGAON IN",
+      "type": "debit"
+    },
+    {
+      "amount": 1005.0,
+      "date": "2026-02-14",
+      "description": "BBPS Payment received",
+      "type": "credit"
+    },
+    {
+      "amount": 1194.89,
+      "date": "2026-02-17",
+      "description": "INNOVATIVE RETAIL CONCE BANGALORE IN",
+      "type": "debit"
+    }
+  ]
+}

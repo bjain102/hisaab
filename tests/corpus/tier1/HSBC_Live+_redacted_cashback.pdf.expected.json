@@ -1,0 +1,255 @@
+{
+  "period": {
+    "end": "2026-09-01",
+    "start": "2026-08-15"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": 22112.85,
+    "debits": 13056.05,
+    "tad": 12504.5
+  },
+  "transactions": [
+    {
+      "amount": 20350.3,
+      "date": "2026-08-19",
+      "description": "BBPS PMT BBPSDP2162317BJ548Z24FOZ",
+      "type": "credit"
+    },
+    {
+      "amount": 1211.0,
+      "date": "2026-08-15",
+      "description": "CASHBACK CREDIT",
+      "type": "credit"
+    },
+    {
+      "amount": 1081.0,
+      "date": "2026-08-16",
+      "description": "POPO GLOBAL PVT LTD T BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 103.96,
+      "date": "2026-08-17",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 426.0,
+      "date": "2026-08-16",
+      "description": "SAVR BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 273.78,
+      "date": "2026-08-18",
+      "description": "IAP ZOMATO LIMITED NEW DELHI",
+      "type": "credit"
+    },
+    {
+      "amount": 252.78,
+      "date": "2026-08-18",
+      "description": "IAP ZOMATO GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 273.78,
+      "date": "2026-08-18",
+      "description": "ZOMATO LIMITED NEW DELHI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 290.78,
+      "date": "2026-08-19",
+      "description": "IAP ZOMATO NEW DELHI",
+      "type": "debit"
+    },
+    {
+      "amount": 97.64,
+      "date": "2026-08-20",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 177.44,
+      "date": "2026-08-20",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 499.0,
+      "date": "2026-08-21",
+      "description": "RELIANCE RETAIL LIMITE MUMBAI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 38.0,
+      "date": "2026-08-21",
+      "description": "LULU INTERNATIONAL SHO BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 253.0,
+      "date": "2026-08-21",
+      "description": "IAP Swiggy Ltd Bangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 61.96,
+      "date": "2026-08-21",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 368.0,
+      "date": "2026-08-22",
+      "description": "CHOCO WORLD BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 325.0,
+      "date": "2026-08-22",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 716.0,
+      "date": "2026-08-22",
+      "description": "MAHALAXMI KANGAN GIFT BENGALURU URB IN",
+      "type": "debit"
+    },
+    {
+      "amount": 317.89,
+      "date": "2026-08-23",
+      "description": "IAP CTRLX TECHNOLOGIES P Hyderabad",
+      "type": "debit"
+    },
+    {
+      "amount": 208.0,
+      "date": "2026-08-24",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 103.96,
+      "date": "2026-08-25",
+      "description": "IAP IND*RESTAURANT BRANDS HTTPS://WWW.B",
+      "type": "debit"
+    },
+    {
+      "amount": 1000.0,
+      "date": "2026-08-26",
+      "description": "XPLOD BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 474.0,
+      "date": "2026-08-26",
+      "description": "SAVR BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 2246.0,
+      "date": "2026-08-28",
+      "description": "SAVR BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 1001.0,
+      "date": "2026-08-31",
+      "description": "ZEPTO MARKETPLACE PRIV BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 150.0,
+      "date": "2026-08-31",
+      "description": "R K ENTERPRISES BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 84.72,
+      "date": "2026-08-31",
+      "description": "ZOMATO LIMITED NEW DELHI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 234.16,
+      "date": "2026-08-31",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 278.0,
+      "date": "2026-08-15",
+      "description": "IAP Flipkart Bengaluru",
+      "type": "debit"
+    },
+    {
+      "amount": 129.0,
+      "date": "2026-08-15",
+      "description": "IAP Flipkart Bengaluru",
+      "type": "debit"
+    },
+    {
+      "amount": 277.77,
+      "date": "2026-08-18",
+      "description": "IAP INNOVATIVE RETAIL CONC BENGALURU",
+      "type": "credit"
+    },
+    {
+      "amount": 277.77,
+      "date": "2026-08-18",
+      "description": "IAP INNOVATIVE RETAIL CONC BENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 207.99,
+      "date": "2026-08-18",
+      "description": "INNOVATIVE RETAIL CONC BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 201.0,
+      "date": "2026-08-22",
+      "description": "IAP SWIGGY IN BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 149.0,
+      "date": "2026-08-22",
+      "description": "Swiggy BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 151.0,
+      "date": "2026-08-22",
+      "description": "Swiggy BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 126.0,
+      "date": "2026-08-25",
+      "description": "IAP Swiggy Instamart BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 474.22,
+      "date": "2026-08-25",
+      "description": "IAP JIO MART MUMBAI",
+      "type": "debit"
+    },
+    {
+      "amount": 54.0,
+      "date": "2026-08-25",
+      "description": "WWWBIGBASKETCOM GURGAON IN",
+      "type": "debit"
+    },
+    {
+      "amount": 224.0,
+      "date": "2026-08-25",
+      "description": "INNOVATIVE RETAIL CONC BENGALURU IN",
+      "type": "debit"
+    }
+  ]
+}

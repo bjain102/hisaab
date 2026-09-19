@@ -1,0 +1,207 @@
+{
+  "period": {
+    "end": "2026-08-14",
+    "start": "2026-07-15"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": 0.0,
+    "debits": 21561.3,
+    "tad": 21561.3
+  },
+  "transactions": [
+    {
+      "amount": 999.0,
+      "date": "2026-07-20",
+      "description": "JOINING FEE CC26201600663",
+      "type": "debit"
+    },
+    {
+      "amount": 430.2,
+      "date": "2026-07-21",
+      "description": "RELIANCE RETAIL LIMITE NAVI MUMBAI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 1027.0,
+      "date": "2026-07-21",
+      "description": "IAP ZEPTONOW NAGPUR",
+      "type": "debit"
+    },
+    {
+      "amount": 161.43,
+      "date": "2026-07-22",
+      "description": "IAP ZOMATO GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 416.0,
+      "date": "2026-07-23",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 118.99,
+      "date": "2026-07-23",
+      "description": "MC DONALDS BENGALURU IN",
+      "type": "debit"
+    },
+    {
+      "amount": 139.06,
+      "date": "2026-07-23",
+      "description": "ZOMATO CYBS NEWDELHI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 206.0,
+      "date": "2026-07-24",
+      "description": "IAP WWWBIGBASKETCOM GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 227.58,
+      "date": "2026-07-26",
+      "description": "ZOMATO LIMITED NEW DELHI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 638.0,
+      "date": "2026-07-28",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 239.0,
+      "date": "2026-07-29",
+      "description": "IAP HEISETASSE BEVERAGES P BENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 89.33,
+      "date": "2026-07-29",
+      "description": "ZOMATO GURGAON IN",
+      "type": "debit"
+    },
+    {
+      "amount": 190.2,
+      "date": "2026-07-30",
+      "description": "IAP ZOMATO NEW DELHI",
+      "type": "debit"
+    },
+    {
+      "amount": 354.0,
+      "date": "2026-07-31",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 363.0,
+      "date": "2026-07-30",
+      "description": "CALIFORNIA BURRITO BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 1.0,
+      "date": "2026-08-01",
+      "description": "IAP TIMES PRIME MUMBAI",
+      "type": "debit"
+    },
+    {
+      "amount": 10225.0,
+      "date": "2026-08-01",
+      "description": "ZEPTO MARKETPLACE PRIV BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 735.0,
+      "date": "2026-08-02",
+      "description": "PVR LIMITED BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 224.0,
+      "date": "2026-08-02",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 394.0,
+      "date": "2026-08-04",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 240.0,
+      "date": "2026-08-02",
+      "description": "CALIFORNIA BURRITO BANGALORE IN",
+      "type": "debit"
+    },
+    {
+      "amount": 270.31,
+      "date": "2026-08-05",
+      "description": "IAP ZOMATO GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 1509.0,
+      "date": "2026-08-06",
+      "description": "IAP AMAZONIN GURGAON",
+      "type": "debit"
+    },
+    {
+      "amount": 91.38,
+      "date": "2026-08-07",
+      "description": "ZOMATO LIMITED NEW DELHI IN",
+      "type": "debit"
+    },
+    {
+      "amount": 768.0,
+      "date": "2026-08-08",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 191.0,
+      "date": "2026-08-09",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 216.0,
+      "date": "2026-08-10",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 325.0,
+      "date": "2026-08-10",
+      "description": "Zepto Marketplace Priv Bangalore IN",
+      "type": "debit"
+    },
+    {
+      "amount": 179.82,
+      "date": "2026-07-20",
+      "description": "IGST ASSESSMENT @18.00% CC26201600663",
+      "type": "debit"
+    },
+    {
+      "amount": 133.0,
+      "date": "2026-08-06",
+      "description": "IAP Swiggy Limited Bangalore",
+      "type": "debit"
+    },
+    {
+      "amount": 343.0,
+      "date": "2026-08-07",
+      "description": "IAP Flipkart Bengaluru",
+      "type": "debit"
+    },
+    {
+      "amount": 117.0,
+      "date": "2026-08-07",
+      "description": "IAP MEESHO BANGALORE",
+      "type": "debit"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* IBM Plex Mono (figures) — weights the app actually uses. */
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+
+/* Geist (body) — regular through bold. Self-hosted (not Google's CDN) so
+   nothing calls out to the internet, matching "Local only" (Sidebar footer). */
+@import '@fontsource-variable/geist';
+
+/* Bricolage Grotesque (display) — headlines and panel titles. Bold,
+   sentence-case; no forced italic/uppercase in this design. */
+@import '@fontsource-variable/bricolage-grotesque';
+
+@import 'tailwindcss';
+@import './styles/tokens.css';

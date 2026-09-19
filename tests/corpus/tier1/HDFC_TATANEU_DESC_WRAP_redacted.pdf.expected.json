@@ -1,0 +1,27 @@
+{
+  "period": {
+    "end": "2026-09-01",
+    "start": "2026-08-02"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 10665.0,
+      "date": "2026-08-06",
+      "description": "BPPY CC PAYMENT DP216218TU0DV1AG0IS (Ref# ST262190083000010073958)",
+      "type": "credit"
+    },
+    {
+      "amount": 0.23,
+      "date": "2026-08-10",
+      "description": "ZEROISE CARD ACCOUNT",
+      "type": "credit"
+    }
+  ]
+}

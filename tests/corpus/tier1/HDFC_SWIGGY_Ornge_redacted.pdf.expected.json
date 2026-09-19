@@ -1,0 +1,49 @@
+{
+  "period": {
+    "end": "2026-09-01",
+    "start": "2026-08-02"
+  },
+  "rewards": {
+    "label": "Cashback",
+    "value": 389.2,
+    "value_type": "cashback_inr"
+  },
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 5831.0,
+      "date": "2026-08-10",
+      "description": "BPPY CC PAYMENT DP216222VQBQGDBMW1T (Ref# ST262230083000010136952)",
+      "type": "credit"
+    },
+    {
+      "amount": 290.0,
+      "date": "2026-08-27",
+      "description": "SwiggyBENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 3602.0,
+      "date": "2026-08-28",
+      "description": "SwiggyBENGALURU",
+      "type": "debit"
+    },
+    {
+      "amount": 29.0,
+      "date": "2026-08-29",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    },
+    {
+      "amount": 360.2,
+      "date": "2026-08-30",
+      "description": "10% Swiggy CashBack",
+      "type": "credit"
+    }
+  ]
+}

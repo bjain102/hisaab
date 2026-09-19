@@ -1,0 +1,35 @@
+{
+  "period": {
+    "end": "2026-03-08",
+    "start": "2026-01-15"
+  },
+  "rewards": null,
+  "skipped_candidates": null,
+  "totals": null,
+  "transactions": [
+    {
+      "amount": 1250.0,
+      "date": "2026-01-15",
+      "description": "SAMPLE RESTAURANT BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 15000.5,
+      "date": "2026-02-03",
+      "description": "SAMPLE AIRLINE TICKETS DELHI",
+      "type": "debit"
+    },
+    {
+      "amount": 500.0,
+      "date": "2026-02-20",
+      "description": "SAMPLE REFUND CREDIT",
+      "type": "credit"
+    },
+    {
+      "amount": 899.99,
+      "date": "2026-03-08",
+      "description": "SAMPLE GROCERY STORE",
+      "type": "debit"
+    }
+  ]
+}

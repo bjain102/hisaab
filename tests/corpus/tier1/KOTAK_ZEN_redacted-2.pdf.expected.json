@@ -1,0 +1,21 @@
+{
+  "period": {
+    "end": "2026-05-15",
+    "start": "2026-04-16"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": 1125.0,
+    "debits": null,
+    "tad": 0.0
+  },
+  "transactions": [
+    {
+      "amount": 1125.0,
+      "date": "2026-05-01",
+      "description": "DP016121222050MJZFAQ",
+      "type": "credit"
+    }
+  ]
+}

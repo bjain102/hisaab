@@ -1,0 +1,403 @@
+{
+  "period": {
+    "end": "2026-06-01",
+    "start": "2026-05-02"
+  },
+  "rewards": {
+    "label": "NeuCoins",
+    "value": 202,
+    "value_type": "points"
+  },
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": null,
+    "debits": null,
+    "tad": null
+  },
+  "transactions": [
+    {
+      "amount": 4659.0,
+      "date": "2026-05-01",
+      "description": "COAL SPARK MULTI CUISINBANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-04",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-04",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 97.5,
+      "date": "2026-05-04",
+      "description": "UPI-Spar Hypermarkets",
+      "type": "debit"
+    },
+    {
+      "amount": 14812.0,
+      "date": "2026-05-04",
+      "description": "BPPY CC PAYMENT DP016124172329W8g6L (Ref# ST261250083000010061715)",
+      "type": "credit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-05",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-05",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-07",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-07",
+      "description": "UPI-BMTC BUS KA57F4278",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-07",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-08",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-08",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 332.0,
+      "date": "2026-05-08",
+      "description": "WWWBIGBASKETCOM",
+      "type": "debit"
+    },
+    {
+      "amount": 200.0,
+      "date": "2026-05-09",
+      "description": "UPI-SHANKAR N S",
+      "type": "debit"
+    },
+    {
+      "amount": 70.0,
+      "date": "2026-05-10",
+      "description": "UPI-CALIFORNIA BURRITO",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-11",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2026-05-11",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-11",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-11",
+      "description": "UPI-BMTC BUS KA57F2526",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-12",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-12",
+      "description": "UPI-BMTC BUS KA57F3225",
+      "type": "debit"
+    },
+    {
+      "amount": 59.0,
+      "date": "2026-05-12",
+      "description": "UPI-MC DONALDS",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-12",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 1104.15,
+      "date": "2026-05-12",
+      "description": "UPI-Tiggle",
+      "type": "debit"
+    },
+    {
+      "amount": 150.0,
+      "date": "2026-05-13",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 64.0,
+      "date": "2026-05-14",
+      "description": "UPI-Rajashekara N Enterprises",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-14",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-14",
+      "description": "UPI-BMTC BUS KA57F4280",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-14",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 1798.2,
+      "date": "2026-05-14",
+      "description": "NOMAD INDIA",
+      "type": "debit"
+    },
+    {
+      "amount": 285.0,
+      "date": "2026-05-16",
+      "description": "UPI-SPRENTZO SPORTS PRIVATE L",
+      "type": "debit"
+    },
+    {
+      "amount": 120.0,
+      "date": "2026-05-16",
+      "description": "UPI-Rajeshwari",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-18",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-18",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-19",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-19",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 200.0,
+      "date": "2026-05-21",
+      "description": "UPI-6Vinod Auto Service",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-22",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-22",
+      "description": "UPI-BMTC BUS KA57F6525",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-22",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 350.0,
+      "date": "2026-05-22",
+      "description": "VENKATESH HEMANTH KU",
+      "type": "debit"
+    },
+    {
+      "amount": 260.0,
+      "date": "2026-05-22",
+      "description": "ZEPTONOW",
+      "type": "debit"
+    },
+    {
+      "amount": 14.0,
+      "date": "2026-05-22",
+      "description": "ZEPTONOW",
+      "type": "credit"
+    },
+    {
+      "amount": 200.0,
+      "date": "2026-05-24",
+      "description": "UPI-Indian Oil PetrolPump S",
+      "type": "debit"
+    },
+    {
+      "amount": 2573.0,
+      "date": "2026-05-24",
+      "description": "UPI-GLOBUS DESIGN",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2026-05-24",
+      "description": "UPI-Ratnadeep Supermarket Ba",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-25",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-25",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2026-05-26",
+      "description": "UPI-N MANJULA",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-26",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-26",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 976.68,
+      "date": "2026-05-27",
+      "description": "UPI-Klook Travel",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2026-05-27",
+      "description": "UPI-P A SHIVASHANKARAREDDY",
+      "type": "debit"
+    },
+    {
+      "amount": 40.0,
+      "date": "2026-05-27",
+      "description": "UPI-SIDDI VINAYAKA ENTERPRISE",
+      "type": "debit"
+    },
+    {
+      "amount": 18.0,
+      "date": "2026-05-28",
+      "description": "UPI-BMTC BUS KA42F1700",
+      "type": "debit"
+    },
+    {
+      "amount": 225.0,
+      "date": "2026-05-28",
+      "description": "UPI-Rajathadri food fort",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-29",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 6.0,
+      "date": "2026-05-29",
+      "description": "UPI-BMTC BUS KA51AJ7620",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-05-29",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 165.0,
+      "date": "2026-05-30",
+      "description": "UPI-ZEPTO MARKETPLACEPRIVATE",
+      "type": "debit"
+    },
+    {
+      "amount": 80.0,
+      "date": "2026-05-31",
+      "description": "UPI-SRINATH B S",
+      "type": "debit"
+    },
+    {
+      "amount": 1989.3,
+      "date": "2026-05-31",
+      "description": "NYKAA",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-06-01",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    },
+    {
+      "amount": 60.0,
+      "date": "2026-06-01",
+      "description": "UPI-UBER INDIA SYSTEMSPRIVAT",
+      "type": "debit"
+    }
+  ]
+}

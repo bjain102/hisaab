@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Hisaab">
+  <!--
+    The Hisaab tally mark. Same geometry as the sidebar's BrandMark component
+    (frontend/src/shell/Sidebar.tsx) — keep the two in sync by hand.
+
+    Two deliberate differences from the in-app mark:
+      1. Literal hex, not var(--color-*): a favicon is fetched standalone, with
+         no stylesheet in scope, so CSS custom properties resolve to nothing.
+         These values are the sRGB equivalents of the oklch design tokens.
+      2. A filled dark ground. Browser tab chrome can be light or dark, and the
+         near-white diagonal disappears entirely against a light tab without it.
+  -->
+  <rect width="32" height="32" rx="7" fill="#150f0b"/>
+  <defs>
+    <!-- gradientUnits="userSpaceOnUse" is load-bearing: the default resolves
+         against each element's own bounding box, and a vertical line's bbox
+         has zero width, so the gradient degenerates and the tally strokes
+         paint as nothing at all. -->
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="6.5" y1="23" x2="25" y2="9">
+      <stop offset="0" stop-color="#39d075"/>
+      <stop offset="1" stop-color="#e7ba54"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#g)" stroke-width="2.8" stroke-linecap="round">
+    <line x1="9" y1="9" x2="9" y2="23"/>
+    <line x1="15.5" y1="9" x2="15.5" y2="23"/>
+    <line x1="22" y1="9" x2="22" y2="23"/>
+  </g>
+  <line x1="6.5" y1="22.5" x2="25" y2="9.5" stroke="#f3f2ed" stroke-width="2.8" stroke-linecap="round"/>
+</svg>

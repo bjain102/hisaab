@@ -1,0 +1,135 @@
+{
+  "period": {
+    "end": "2026-07-02",
+    "start": "2026-06-03"
+  },
+  "rewards": null,
+  "skipped_candidates": 0,
+  "totals": {
+    "credits": 15647.51,
+    "debits": 15563.22,
+    "tad": 13981.22
+  },
+  "transactions": [
+    {
+      "amount": 14065.51,
+      "date": "2026-06-16",
+      "description": "PAYMENT RECEIVED. THANK YOU",
+      "type": "credit"
+    },
+    {
+      "amount": 100.0,
+      "date": "2026-06-03",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 2000.0,
+      "date": "2026-06-03",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 2000.0,
+      "date": "2026-06-03",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 2500.0,
+      "date": "2026-06-03",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 2000.0,
+      "date": "2026-06-03",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 100.0,
+      "date": "2026-06-17",
+      "description": "FLIPKART ONLINE PG BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 109.1,
+      "date": "2026-06-18",
+      "description": "SPAR GOPALAN MALL BANGALORE",
+      "type": "debit"
+    },
+    {
+      "amount": 500.0,
+      "date": "2026-06-19",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 791.0,
+      "date": "2026-06-20",
+      "description": "Razorpay*Blinkit Gurugram",
+      "type": "debit"
+    },
+    {
+      "amount": 710.0,
+      "date": "2026-06-20",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 791.0,
+      "date": "2026-06-20",
+      "description": "Razorpay*Blinkit Gurugram",
+      "type": "credit"
+    },
+    {
+      "amount": 811.0,
+      "date": "2026-06-20",
+      "description": "Razorpay*Blinkit Gurugram",
+      "type": "debit"
+    },
+    {
+      "amount": 791.0,
+      "date": "2026-06-20",
+      "description": "Razorpay*Blinkit Gurugram",
+      "type": "credit"
+    },
+    {
+      "amount": 791.0,
+      "date": "2026-06-20",
+      "description": "Razorpay*Blinkit Gurugram",
+      "type": "debit"
+    },
+    {
+      "amount": 331.89,
+      "date": "2026-06-20",
+      "description": "RELIANCE RETAIL LTD Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 224.23,
+      "date": "2026-06-22",
+      "description": "HARD CASTLE RESTAURANTS Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 395.0,
+      "date": "2026-06-29",
+      "description": "CALIFORNIA BURRITO RMZ 560016",
+      "type": "debit"
+    },
+    {
+      "amount": 2000.0,
+      "date": "2026-07-01",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    },
+    {
+      "amount": 200.0,
+      "date": "2026-07-01",
+      "description": "AMAZON Mumbai",
+      "type": "debit"
+    }
+  ]
+}
